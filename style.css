@@ -1,0 +1,179 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #222;
+}
+
+header {
+  background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("images/banniere.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 42px;
+}
+
+header p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+nav {
+  background-color: #1f1f1f;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #444;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  min-width: 220px;
+  z-index: 1000;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  width: 100%;
+}
+
+main {
+  max-width: 1100px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+section {
+  margin-bottom: 35px;
+}
+
+h2 {
+  color: #8b1e3f;
+}
+
+img {
+  max-width: 500px;
+  width: 100%
+  height: auto;
+  border-radius: 8px;
+  display: block; 
+  margin: 20px auto;
+}
+
+.blocs {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.bloc {
+  flex: 1 1 250px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.galerie img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+button {
+  width: 200px;
+  padding: 12px;
+  border: none;
+  background-color: #8b1e3f;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6f1732;
+}
+
+.retour-haut {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #8b1e3f;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #1f1f1f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.video-container {
+  text-align: center;
+}
+
+audio, video, iframe {
+  max-width: 100%;
+}
